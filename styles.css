@@ -85,26 +85,42 @@
     background: rgba(0, 0, 0, 0.4); /* Overlay for contrast */
 }
 
-/* Slider Styling */
-.carousel {
+/* Hero Slider Styling */
+#heroSlider {
     max-width: 100%;
     margin: 0 auto;
     position: relative;
 }
 
 .carousel-title {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Increased from 2rem */
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow to make text pop */
 }
 
 .carousel-text {
-    font-size: 1.25rem;
+    font-size: 1.5rem; /* Increased from 1.25rem */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Shadow for readability */
 }
 
 .carousel .btn-outline-light {
     font-weight: 500;
+    font-size: 1.25rem; /* Slightly larger button text */
+}
+
+/* Adjust Carousel Arrows Position */
+#heroSlider .carousel-control-prev,
+#heroSlider .carousel-control-next {
+    width: 15%; /* Wider clickable area */
+    z-index: 1; /* Ensure arrows stay above content */
+}
+
+#heroSlider .carousel-control-prev {
+    left: -10%; /* Move left arrow further out to avoid overlap */
+}
+
+#heroSlider .carousel-control-next {
+    right: -10%; /* Move right arrow further out */
 }
 
 /* CTA Cards */
@@ -116,7 +132,7 @@
     transform: translateY(-5px);
 }
 
-/* Testimonials Section (Full-Width Carousel) */
+/* Testimonials Section (Full-Width Carousel with Icons) */
 .testimonials {
     background-color: #f8f9fa; /* Light gray background */
 }
@@ -190,15 +206,23 @@ footer .border-top {
     }
     
     .carousel-title {
-        font-size: 1.75rem;
+        font-size: 2rem; /* Adjusted from 1.75rem */
     }
     
     .carousel-text {
+        font-size: 1.25rem; /* Adjusted from 1.1rem */
+    }
+    
+    .carousel .btn-outline-light {
         font-size: 1.1rem;
     }
     
-    .carousel-inner .card {
-        min-height: 180px;
+    #heroSlider .carousel-control-prev {
+        left: -5%;
+    }
+    
+    #heroSlider .carousel-control-next {
+        right: -5%;
     }
     
     .card {
@@ -229,16 +253,23 @@ footer .border-top {
     }
     
     .carousel-title {
-        font-size: 1.5rem;
+        font-size: 1.75rem; /* Adjusted from 1.5rem */
     }
     
     .carousel-text {
+        font-size: 1.1rem; /* Adjusted from 1rem */
+    }
+    
+    .carousel .btn-outline-light {
         font-size: 1rem;
     }
     
-    .carousel-inner .card {
-        min-height: 160px;
-        padding: 1.5rem;
+    #heroSlider .carousel-control-prev {
+        left: -3%;
+    }
+    
+    #heroSlider .carousel-control-next {
+        right: -3%;
     }
     
     .testimonial-text {
