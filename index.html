@@ -69,37 +69,34 @@
         <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
-                    <!-- Login Form -->
+                    <!-- Login Form (Username Only) -->
                     <div class="col-12 col-md-5 col-lg-4">
                         <div class="card p-4 bg-light opacity-75">
                             <h3 class="text-center">Login</h3>
                             <form>
                                 <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="mb-3">
-                                    <input type="password" class="form-control" placeholder="Password">
+                                    <input type="text" class="form-control" placeholder="Username">
                                 </div>
                                 <button type="submit" class="btn btn-primary w-100">Login</button>
                             </form>
                         </div>
                     </div>
-                    <!-- Slider -->
+                    <!-- Slider (No Background Box) -->
                     <div class="col-12 col-md-6 offset-md-1 col-lg-5 offset-lg-3">
-                        <div id="heroSlider" class="carousel slide opacity-75" data-bs-ride="carousel">
+                        <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <div class="card p-4 bg-light">
-                                        <h4 class="card-title">Slide 1</h4>
-                                        <p class="card-text">Welcome to our website! Join us today.</p>
-                                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                                    <div class="text-light p-4">
+                                        <h4 class="carousel-title">Slide 1</h4>
+                                        <p class="carousel-text">Welcome to our website! Join us today.</p>
+                                        <a href="#" class="btn btn-outline-light mt-2">Learn More</a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="card p-4 bg-light">
-                                        <h4 class="card-title">Slide 2</h4>
-                                        <p class="card-text">Discover our services and benefits.</p>
-                                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                                    <div class="text-light p-4">
+                                        <h4 class="carousel-title">Slide 2</h4>
+                                        <p class="carousel-text">Discover our services and benefits.</p>
+                                        <a href="#" class="btn btn-outline-light mt-2">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -156,38 +153,44 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Testimonials Section (Full-Width Carousel) -->
     <section class="testimonials bg-light py-5">
         <div class="container">
             <h2 class="text-center mb-5">What Our Clients Say</h2>
-            <div class="row g-4">
-                <div class="col-12 col-md-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p class="card-text">"Riverflow Savings made my dream of owning a home a reality!"</p>
-                            <h5 class="card-title">Jane Doe</h5>
+            <div id="testimonialSlider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="text-center py-4">
+                            <p class="testimonial-text">"Riverflow Savings made my dream of owning a home a reality!"</p>
+                            <h5 class="testimonial-title">Jane Doe</h5>
                             <p class="text-muted">Homeowner</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p class="card-text">"Their support team was incredibly helpful throughout the process."</p>
-                            <h5 class="card-title">John Smith</h5>
+                    <div class="carousel-item">
+                        <div class="text-center py-4">
+                            <p class="testimonial-text">"Their support team was incredibly helpful throughout the process."</p>
+                            <h5 class="testimonial-title">John Smith</h5>
                             <p class="text-muted">First-Time Buyer</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p class="card-text">"I saved more than I ever thought possible with Riverflow."</p>
-                            <h5 class="card-title">Emily Johnson</h5>
+                    <div class="carousel-item">
+                        <div class="text-center py-4">
+                            <p class="testimonial-text">"I saved more than I ever thought possible with Riverflow."</p>
+                            <h5 class="testimonial-title">Emily Johnson</h5>
                             <p class="text-muted">Investor</p>
                         </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" 
+                        data-bs-target="#testimonialSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" 
+                        data-bs-target="#testimonialSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
