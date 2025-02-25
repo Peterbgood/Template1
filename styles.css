@@ -82,7 +82,7 @@
 }
 
 .hero-overlay {
-    background: rgba(0, 0, 0, 0.1); /* Overlay for contrast */
+   
 }
 
 /* Hero Slider Styling */
@@ -99,8 +99,9 @@
 }
 
 .carousel-text {
-    font-size: 1.5rem; /* Increased from 1.25rem */
+    font-size: 2rem; /* Increased from 1.25rem */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+    font-weight: 600;
 }
 
 .carousel .btn-outline-light {
