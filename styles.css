@@ -1,0 +1,251 @@
+/* Top Navigation Bar */
+.top-nav {
+    background-color: #1a1a1a; /* Darker than bg-dark for contrast */
+}
+
+.top-nav .nav-link {
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.25rem 1rem;
+}
+
+.top-nav .nav-link:hover {
+    color: #83C5BE; /* Teal hover effect */
+}
+
+/* Logo Text Styling */
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #006D77; /* Teal */
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+}
+
+.logo-text span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #333;
+    display: block;
+    margin-top: -0.2rem;
+    letter-spacing: 1px;
+}
+
+.logo-text::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(to right, #83C5BE, transparent);
+    border-radius: 2px;
+}
+
+.logo-text:hover {
+    color: #83C5BE;
+}
+
+.logo-text:hover span {
+    color: #006D77;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #333;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Hero Section with Background Image */
+.hero {
+    min-height: 70vh;
+    max-height: 800px;
+    position: relative;
+    background-image: url('homepagebanner.jpg'); /* Local decorative image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* No longer needed */
+.hero-image {
+    display: none;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.4); /* Overlay for contrast */
+}
+
+/* Slider Styling */
+.carousel {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-inner .card {
+    min-height: 200px;
+    padding: 2rem;
+}
+
+.carousel-item .card-title {
+    font-size: 1.5rem;
+}
+
+.carousel-item .card-text {
+    font-size: 1.1rem;
+}
+
+/* Carousel Arrows - Original Bootstrap Styling */
+.carousel-control-prev,
+.carousel-control-next {
+    /* Default Bootstrap styling */
+}
+
+/* CTA Cards */
+.cta-card {
+    transition: transform 0.3s ease;
+}
+
+.cta-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.testimonials .card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .card-title {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.testimonials .text-muted {
+    font-size: 0.9rem;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #fff;
+}
+
+.about-us p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a; /* Darker than bg-dark */
+}
+
+footer h5 {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+footer p, footer a {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    color: #83C5BE; /* Teal hover effect */
+}
+
+footer .border-top {
+    border-color: #333 !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #f8f9fa;
+        padding: 1rem;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .hero {
+        min-height: 80vh;
+    }
+    
+    .carousel {
+        margin-top: 2rem;
+    }
+    
+    .carousel-inner .card {
+        min-height: 180px;
+    }
+    
+    .card {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+    
+    .logo-text {
+        font-size: 1.5rem;
+    }
+    
+    .logo-text span {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    
+    .logo-text span {
+        font-size: 0.9rem;
+    }
+    
+    .hero {
+        min-height: 90vh;
+    }
+    
+    .carousel-inner .card {
+        min-height: 160px;
+        padding: 1.5rem;
+    }
+    
+    .carousel-item .card-title {
+        font-size: 1.25rem;
+    }
+    
+    .carousel-item .card-text {
+        font-size: 1rem;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .testimonials .card {
+        margin-bottom: 1rem;
+    }
+    
+    footer .col-12 {
+        margin-bottom: 2rem;
+    }
+}
