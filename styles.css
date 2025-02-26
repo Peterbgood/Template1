@@ -126,9 +126,24 @@
     font-weight: 600;
 }
 
-.carousel .btn-outline-light {
-    font-weight: 500;
-    font-size: 1.25rem; /* Slightly larger button text */
+/* Updated Slider Button Styling */
+.btn-slider-teal {
+    background-color: #006D77; /* Solid teal color */
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.25rem; /* Matches previous size */
+    padding: 0.75rem 1.5rem; /* Larger padding to stand out */
+    border: none; /* Remove outline */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.btn-slider-teal:hover {
+    background-color: #83C5BE; /* Lighter teal on hover */
+    color: #fff;
+    transform: scale(1.05); /* Slight scale up for emphasis */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 
 /* Adjust Carousel Arrows Position */
@@ -316,8 +331,9 @@ footer .border-top {
         font-size: 1.25rem;
     }
     
-    .carousel .btn-outline-light {
+    .btn-slider-teal {
         font-size: 1.1rem;
+        padding: 0.6rem 1.2rem; /* Slightly smaller for medium screens */
     }
     
     #heroSlider .carousel-control-prev {
@@ -365,8 +381,9 @@ footer .border-top {
         font-size: 1.1rem;
     }
     
-    .carousel .btn-outline-light {
+    .btn-slider-teal {
         font-size: 1rem;
+        padding: 0.5rem 1rem; /* Smaller for small screens */
     }
     
     #heroSlider .carousel-control-prev {
@@ -403,8 +420,9 @@ footer .border-top {
         font-size: 1rem;
     }
     
-    .carousel .btn-outline-light {
+    .btn-slider-teal {
         font-size: 0.9rem;
+        padding: 0.4rem 0.9rem; /* Smallest size for very small screens */
     }
     
     .testimonial-text {
