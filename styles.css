@@ -67,8 +67,8 @@
 
 /* Hero Section with Background Image */
 .hero {
-    min-height: 70vh;
-    max-height: 800px;
+    min-height: 85vh; /* Increased from 70vh to give more room */
+    max-height: 1000px; /* Increased from 800px for larger screens */
     position: relative;
     background-image: url('homepagebanner.jpg'); /* Local decorative image */
     background-size: cover;
@@ -82,7 +82,7 @@
 }
 
 .hero-overlay {
-   
+    /* Intentionally left empty as per your original */
 }
 
 /* Hero Slider Styling */
@@ -191,6 +191,90 @@ footer .border-top {
     border-color: #333 !important;
 }
 
+/* Fancy Login Card */
+.login-card {
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px; /* Prevent it from getting too wide */
+    margin: 0 auto; /* Center it on smaller screens */
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.text-teal {
+    color: #006D77; /* Match your teal color */
+}
+
+/* Input Icons */
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+.form-control.ps-5 {
+    padding-left: 3.5rem !important; /* Space for the icon */
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #83C5BE; /* Light teal for focus */
+    box-shadow: 0 0 5px rgba(131, 197, 190, 0.5);
+}
+
+/* Fancy Login Button */
+.btn-teal {
+    background: linear-gradient(90deg, #006D77, #83C5BE);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.btn-teal:hover {
+    background: linear-gradient(90deg, #83C5BE, #006D77);
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.btn-teal i {
+    transition: transform 0.3s ease;
+}
+
+.btn-teal:hover i {
+    transform: translateX(5px);
+}
+
+/* Animation for Login Card */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-card {
+    animation: fadeInUp 0.5s ease-out;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 991px) {
     .navbar-collapse {
@@ -198,20 +282,16 @@ footer .border-top {
         padding: 1rem;
     }
     
-    .navbar-nav {
-        text-align: center;
-    }
-    
     .hero {
-        min-height: 80vh;
+        min-height: 100vh; /* Full height on medium screens to fit login */
     }
     
     .carousel-title {
-        font-size: 2rem; /* Adjusted from 1.75rem */
+        font-size: 2rem;
     }
     
     .carousel-text {
-        font-size: 1.25rem; /* Adjusted from 1.1rem */
+        font-size: 1.25rem;
     }
     
     .carousel .btn-outline-light {
@@ -240,25 +320,17 @@ footer .border-top {
     }
 }
 
-@media (max-width: 576px) {
-    .logo-text {
-        font-size: 1.2rem;
-    }
-    
-    .logo-text span {
-        font-size: 0.9rem;
-    }
-    
+@media (max-width: 767px) {
     .hero {
-        min-height: 90vh;
+        min-height: 120vh; /* Extra height on small screens for stacking */
     }
     
     .carousel-title {
-        font-size: 1.75rem; /* Adjusted from 1.5rem */
+        font-size: 1.75rem;
     }
     
     .carousel-text {
-        font-size: 1.1rem; /* Adjusted from 1rem */
+        font-size: 1.1rem;
     }
     
     .carousel .btn-outline-light {
@@ -271,6 +343,36 @@ footer .border-top {
     
     #heroSlider .carousel-control-next {
         right: -3%;
+    }
+    
+    .login-card {
+        padding: 2rem; /* Slightly less padding on small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    
+    .logo-text span {
+        font-size: 0.9rem;
+    }
+    
+    .hero {
+        min-height: 130vh; /* Even more height for very small screens */
+    }
+    
+    .carousel-title {
+        font-size: 1.5rem;
+    }
+    
+    .carousel-text {
+        font-size: 1rem;
+    }
+    
+    .carousel .btn-outline-light {
+        font-size: 0.9rem;
     }
     
     .testimonial-text {
