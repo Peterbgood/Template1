@@ -13,6 +13,12 @@
     color: #83C5BE; /* Teal hover effect */
 }
 
+/* Top Navigation Bar Icons */
+.top-nav .nav-link i {
+    font-size: 1rem; /* Slightly larger than text for visibility */
+    vertical-align: middle; /* Aligns icon with text */
+}
+
 /* Logo Text Styling */
 .logo-text {
     font-family: 'Playfair Display', serif;
@@ -54,15 +60,31 @@
     color: #006D77;
 }
 
-/* Navbar Links */
+/* Navbar Links - Updated for bigger menu items */
 .navbar-nav .nav-link {
     color: #333;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 0.75rem 1.25rem; /* Increased padding for larger clickable area */
+    font-size: 1.25rem; /* Increased from 1rem to make text bigger */
+    line-height: 1.5; /* Adjusted for better spacing */
 }
 
 .navbar-nav .nav-link:hover {
     color: #007bff;
+}
+
+/* Dropdown Menu Items - Updated for consistency with bigger menu */
+.dropdown-menu {
+    font-size: 1.25rem; /* Match the nav-link size */
+}
+
+.dropdown-item {
+    padding: 0.5rem 1.25rem; /* Adjusted padding for dropdown items */
+}
+
+/* Ensure dropdown toggle aligns with larger text */
+.navbar-nav .dropdown-toggle::after {
+    margin-left: 0.5rem; /* Slight increase for spacing */
+    vertical-align: middle; /* Aligns the caret better */
 }
 
 /* Hero Section with Background Image */
@@ -317,6 +339,16 @@ footer .border-top {
     
     .logo-text span {
         font-size: 1rem;
+    }
+    
+    /* Adjust navbar links for mobile/offcanvas view */
+    .navbar-nav .nav-link {
+        font-size: 1.1rem; /* Slightly smaller for mobile */
+        padding: 0.5rem 1rem;
+    }
+    
+    .dropdown-menu {
+        font-size: 1.1rem;
     }
 }
 
