@@ -64,7 +64,7 @@
 .navbar-nav .nav-link {
     color: #333;
     padding: 0.75rem 1.25rem; /* Increased padding for larger clickable area */
-    font-size: 1.25rem; /* Increased from 1rem to make text bigger */
+    font-size: 1.1rem; /* Increased from 1rem to make text bigger */
     line-height: 1.5; /* Adjusted for better spacing */
 }
 
