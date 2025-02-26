@@ -204,9 +204,10 @@
     line-height: 1.6;
 }
 
-/* Footer */
+/* Footer with Subtle Left-to-Right Gradient */
 footer {
-    background-color: #1a1a1a; /* Darker than bg-dark */
+    background: linear-gradient(90deg, #003F47 0%, #006D77 50%, #004D5A 100%); /* Subtle left-to-right gradient */
+    padding: 5rem 0; /* Original padding */
 }
 
 footer h5 {
@@ -216,7 +217,7 @@ footer h5 {
 }
 
 footer p, footer a {
-    color: #ccc;
+    color: #ccc; /* Original light gray for readability */
     font-size: 0.9rem;
 }
 
@@ -225,7 +226,7 @@ footer a:hover {
 }
 
 footer .border-top {
-    border-color: #333 !important;
+    border-color: #333 !important; /* Original border color */
 }
 
 /* Fancy Login Card */
