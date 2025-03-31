@@ -1,6 +1,6 @@
 /* Top Navigation Bar */
 .top-nav {
-    background-color: #1a1a1a; /* Darker than bg-dark for contrast */
+    background-color: #1a1a1a;
 }
 
 .top-nav .nav-link {
@@ -10,13 +10,13 @@
 }
 
 .top-nav .nav-link:hover {
-    color: #83C5BE; /* Teal hover effect */
+    color: #83C5BE;
 }
 
 /* Top Navigation Bar Icons */
 .top-nav .nav-link i {
-    font-size: 1rem; /* Slightly larger than text for visibility */
-    vertical-align: middle; /* Aligns icon with text */
+    font-size: 1rem;
+    vertical-align: middle;
 }
 
 /* Logo Text Styling */
@@ -24,7 +24,7 @@
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
     font-weight: 700;
-    color: #006D77; /* Teal */
+    color: #006D77;
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -60,51 +60,56 @@
     color: #006D77;
 }
 
-/* Navbar Links - Updated for bigger menu items */
+/* Navbar Links */
 .navbar-nav .nav-link {
     color: #333;
-    padding: 0.75rem 1.25rem; /* Increased padding for larger clickable area */
-    font-size: 1.1rem; /* Increased from 1rem to make text bigger */
-    line-height: 1.5; /* Adjusted for better spacing */
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 .navbar-nav .nav-link:hover {
     color: #007bff;
 }
 
-/* Dropdown Menu Items - Updated for consistency with bigger menu */
+/* Dropdown Menu Items */
 .dropdown-menu {
-    font-size: 1.25rem; /* Match the nav-link size */
+    font-size: 1.25rem;
 }
 
 .dropdown-item {
-    padding: 0.5rem 1.25rem; /* Adjusted padding for dropdown items */
+    padding: 0.5rem 1.25rem;
 }
 
-/* Ensure dropdown toggle aligns with larger text */
-.navbar-nav .dropdown-toggle::after {
-    margin-left: 0.5rem; /* Slight increase for spacing */
-    vertical-align: middle; /* Aligns the caret better */
-}
-
-/* Hero Section with Background Image */
+/* Hero Section */
 .hero {
-    min-height: 85vh; /* Increased from 70vh to give more room */
-    max-height: 1000px; /* Increased from 800px for larger screens */
+    min-height: 85vh;
+    max-height: 1000px;
     position: relative;
-    background-image: url('homepagebanner.jpg'); /* Local decorative image */
+    background-image: url('homepagebanner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* No longer needed */
-.hero-image {
-    display: none;
+/* Overlay for better readability */
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.2);
 }
 
-.hero-overlay {
-    /* Intentionally left empty as per your original */
+/* Navbar over Banner */
+.navbar {
+    background: transparent !important;
+}
+
+.navbar-nav .nav-link,
+.navbar-brand.logo-text,
+.logo-text span {
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #83C5BE !important;
 }
 
 /* Hero Slider Styling */
@@ -115,50 +120,50 @@
 }
 
 .carousel-title {
-    font-size: 2.5rem; /* Increased from 2rem */
+    font-size: 2.5rem;
     font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow to make text pop */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .carousel-text {
-    font-size: 2rem; /* Increased from 1.25rem */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     font-weight: 600;
 }
 
-/* Updated Slider Button Styling */
+/* Original Slider Button Styling */
 .btn-slider-teal {
-    background-color: #006D77; /* Solid teal color */
+    background-color: #006D77;
     color: #fff;
     font-weight: 600;
-    font-size: 1.25rem; /* Matches previous size */
-    padding: 0.75rem 1.5rem; /* Larger padding to stand out */
-    border: none; /* Remove outline */
-    border-radius: 25px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
-    transition: all 0.3s ease; /* Smooth hover effect */
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
 
 .btn-slider-teal:hover {
-    background-color: #83C5BE; /* Lighter teal on hover */
+    background-color: #83C5BE;
     color: #fff;
-    transform: scale(1.05); /* Slight scale up for emphasis */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Adjust Carousel Arrows Position */
 #heroSlider .carousel-control-prev,
 #heroSlider .carousel-control-next {
-    width: 15%; /* Wider clickable area */
-    z-index: 1; /* Ensure arrows stay above content */
+    width: 15%;
+    z-index: 1;
 }
 
 #heroSlider .carousel-control-prev {
-    left: -10%; /* Move left arrow further out to avoid overlap */
+    left: -10%;
 }
 
 #heroSlider .carousel-control-next {
-    right: -10%; /* Move right arrow further out */
+    right: -10%;
 }
 
 /* CTA Cards */
@@ -170,9 +175,9 @@
     transform: translateY(-5px);
 }
 
-/* Testimonials Section (Full-Width Carousel with Icons) */
+/* Testimonials Section */
 .testimonials {
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #f8f9fa;
 }
 
 .testimonial-text {
@@ -204,10 +209,10 @@
     line-height: 1.6;
 }
 
-/* Footer with Subtle Left-to-Right Gradient */
+/* Footer */
 footer {
-    background: linear-gradient(90deg, #003F47 0%, #006D77 50%, #004D5A 100%); /* Subtle left-to-right gradient */
-    padding: 5rem 0; /* Original padding */
+    background: linear-gradient(90deg, #003F47 0%, #006D77 50%, #004D5A 100%);
+    padding: 5rem 0;
 }
 
 footer h5 {
@@ -217,26 +222,26 @@ footer h5 {
 }
 
 footer p, footer a {
-    color: #ccc; /* Original light gray for readability */
+    color: #ccc;
     font-size: 0.9rem;
 }
 
 footer a:hover {
-    color: #83C5BE; /* Teal hover effect */
+    color: #83C5BE;
 }
 
 footer .border-top {
-    border-color: #333 !important; /* Original border color */
+    border-color: #333 !important;
 }
 
-/* Fancy Login Card */
+/* Smaller Semi-Transparent Login Card */
 .login-card {
+    background: rgba(248, 249, 250, 0.8) !important;
     border: none;
     border-radius: 15px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 400px; /* Prevent it from getting too wide */
-    margin: 0 auto; /* Center it on smaller screens */
+    max-width: 320px; /* Smaller width */
+    margin: 0 auto;
 }
 
 .login-card:hover {
@@ -245,7 +250,7 @@ footer .border-top {
 }
 
 .text-teal {
-    color: #006D77; /* Match your teal color */
+    color: #006D77;
 }
 
 /* Input Icons */
@@ -255,18 +260,18 @@ footer .border-top {
     top: 50%;
     transform: translateY(-50%);
     color: #6c757d;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Slightly smaller */
 }
 
 .form-control.ps-5 {
-    padding-left: 3.5rem !important; /* Space for the icon */
+    padding-left: 3.5rem !important;
     border-radius: 10px;
     border: 1px solid #ced4da;
     transition: border-color 0.3s ease;
 }
 
 .form-control:focus {
-    border-color: #83C5BE; /* Light teal for focus */
+    border-color: #83C5BE;
     box-shadow: 0 0 5px rgba(131, 197, 190, 0.5);
 }
 
@@ -275,7 +280,7 @@ footer .border-top {
     background: linear-gradient(90deg, #006D77, #83C5BE);
     border: none;
     border-radius: 25px;
-    padding: 10px 20px;
+    padding: 8px 16px; /* Slightly smaller padding */
     font-weight: 500;
     position: relative;
     overflow: hidden;
@@ -316,129 +321,48 @@ footer .border-top {
 /* Responsive Adjustments */
 @media (max-width: 991px) {
     .navbar-collapse {
-        background-color: #f8f9fa;
-        padding: 1rem;
+        background: rgba(248, 249, 250, 0.9) !important;
     }
-    
+    .navbar-nav .nav-link {
+        color: #333 !important;
+    }
+    .navbar-nav .nav-link:hover {
+        color: #007bff !important;
+    }
     .hero {
-        min-height: 100vh; /* Full height on medium screens to fit login */
+        min-height: 100vh;
     }
-    
     .carousel-title {
         font-size: 2rem;
     }
-    
     .carousel-text {
         font-size: 1.25rem;
-    }
-    
-    .btn-slider-teal {
-        font-size: 1.1rem;
-        padding: 0.6rem 1.2rem; /* Slightly smaller for medium screens */
-    }
-    
-    #heroSlider .carousel-control-prev {
-        left: -5%;
-    }
-    
-    #heroSlider .carousel-control-next {
-        right: -5%;
-    }
-    
-    .card {
-        margin: 0 auto;
-        max-width: 300px;
-    }
-    
-    .logo-text {
-        font-size: 1.5rem;
-    }
-    
-    .logo-text span {
-        font-size: 1rem;
-    }
-    
-    /* Adjust navbar links for mobile/offcanvas view */
-    .navbar-nav .nav-link {
-        font-size: 1.1rem; /* Slightly smaller for mobile */
-        padding: 0.5rem 1rem;
-    }
-    
-    .dropdown-menu {
-        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 767px) {
     .hero {
-        min-height: 120vh; /* Extra height on small screens for stacking */
+        min-height: 120vh;
     }
-    
     .carousel-title {
         font-size: 1.75rem;
     }
-    
     .carousel-text {
         font-size: 1.1rem;
-    }
-    
-    .btn-slider-teal {
-        font-size: 1rem;
-        padding: 0.5rem 1rem; /* Smaller for small screens */
-    }
-    
-    #heroSlider .carousel-control-prev {
-        left: -3%;
-    }
-    
-    #heroSlider .carousel-control-next {
-        right: -3%;
-    }
-    
-    .login-card {
-        padding: 2rem; /* Slightly less padding on small screens */
     }
 }
 
 @media (max-width: 576px) {
-    .logo-text {
-        font-size: 1.2rem;
-    }
-    
-    .logo-text span {
-        font-size: 0.9rem;
-    }
-    
     .hero {
-        min-height: 130vh; /* Even more height for very small screens */
+        min-height: 130vh;
     }
-    
     .carousel-title {
         font-size: 1.5rem;
     }
-    
     .carousel-text {
         font-size: 1rem;
     }
-    
-    .btn-slider-teal {
-        font-size: 0.9rem;
-        padding: 0.4rem 0.9rem; /* Smallest size for very small screens */
-    }
-    
-    .testimonial-text {
-        font-size: 1.25rem;
-    }
-    
-    .testimonial-title {
-        font-size: 1rem;
-    }
-    
-    .testimonials .text-muted {
-        font-size: 0.9rem;
-    }
-    
-    footer .col-12 {
-        margin-bottom: 2rem;
+    .login-card {
+        max-width: 280px; /* Even smaller on very small screens */
     }
 }
