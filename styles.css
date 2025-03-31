@@ -24,7 +24,7 @@
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
     font-weight: 700;
-    color: #006D77;
+    color: #006D77; /* Default teal */
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -104,12 +104,21 @@
 
 .navbar-nav .nav-link,
 .navbar-brand.logo-text,
-.logo-text span {
+.navbar-brand.logo-text span { /* Ensure span is white too on main navbar */
     color: #fff !important;
 }
 
 .navbar-nav .nav-link:hover {
     color: #83C5BE !important;
+}
+
+/* White Hamburger Toggle */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
 /* Hero Slider Styling */
@@ -240,7 +249,7 @@ footer .border-top {
     border: none;
     border-radius: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 320px; /* Smaller width */
+    max-width: 320px;
     margin: 0 auto;
 }
 
@@ -260,7 +269,7 @@ footer .border-top {
     top: 50%;
     transform: translateY(-50%);
     color: #6c757d;
-    font-size: 1rem; /* Slightly smaller */
+    font-size: 1rem;
 }
 
 .form-control.ps-5 {
@@ -280,7 +289,7 @@ footer .border-top {
     background: linear-gradient(90deg, #006D77, #83C5BE);
     border: none;
     border-radius: 25px;
-    padding: 8px 16px; /* Slightly smaller padding */
+    padding: 8px 16px;
     font-weight: 500;
     position: relative;
     overflow: hidden;
@@ -338,6 +347,17 @@ footer .border-top {
     .carousel-text {
         font-size: 1.25rem;
     }
+    /* Adjust login box positioning */
+    .login-container {
+        margin-top: 80px;
+    }
+    /* Fix logo color in offcanvas */
+    .offcanvas-header .navbar-brand.logo-text {
+        color: #006D77 !important; /* Teal for visibility */
+    }
+    .offcanvas-header .navbar-brand.logo-text span {
+        color: #333 !important; /* Darker span */
+    }
 }
 
 @media (max-width: 767px) {
@@ -349,6 +369,9 @@ footer .border-top {
     }
     .carousel-text {
         font-size: 1.1rem;
+    }
+    .login-container {
+        margin-top: 100px;
     }
 }
 
@@ -363,6 +386,9 @@ footer .border-top {
         font-size: 1rem;
     }
     .login-card {
-        max-width: 280px; /* Even smaller on very small screens */
+        max-width: 280px;
+    }
+    .login-container {
+        margin-top: 120px;
     }
 }
